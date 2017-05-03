@@ -13,9 +13,10 @@ import util.isValid
  *  Write an inline function "and" and use it to complete the function isThereMoreValidThanInvalid using a single Line
  *
  */
+inline fun <T, R> T.and(block: (T) -> R): R = block(this)
 
-fun isThereMoreValidThanInvalid(vararg positions: Position)= TODO()
-
+fun isThereMoreValidThanInvalid(vararg positions:Position)=
+        positions.partition { it.isValid() }.and { it.first.size>it.second.size }
 
 /**
  * BTW, "and" function is already there in kotlin, his name is let
@@ -25,9 +26,7 @@ fun isThereMoreValidThanInvalid(vararg positions: Position)= TODO()
  * Write a function "isDataType" that return true if the calling type is a data type
  */
 
-
-
-
+inline fun <reified T> T.isDataType() =T::class.isData
 
 
 
