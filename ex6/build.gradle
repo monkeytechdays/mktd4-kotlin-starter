@@ -1,0 +1,10 @@
+apply plugin: 'kotlin'
+
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$parent.ext.kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$parent.ext.kotlin_version"
+
+    testCompile 'junit:junit:4.12'
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit:$parent.ext.kotlin_version"
+}
