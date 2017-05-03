@@ -10,7 +10,7 @@ import util.Player
  * Initialize the mutable property with.
  */
 fun shouldInitializeMutableProperty(): Int {
-    TODO*/ a = 2
+    var a = 2
     a = 3
     return a
 }
@@ -19,7 +19,7 @@ fun shouldInitializeMutableProperty(): Int {
  * Initialize the immutable property a.
  */
 fun shouldInitializeImmutableProperty(): Int {
-    /*TODO*/ a = 2
+    val a = 2
     // a = 3 won't compile
     return a
 }
@@ -34,11 +34,23 @@ fun shouldInitializeImmutableProperty(): Int {
 class Position(_posX: Int, _posY: Int) {
 
     var posX = if (_posX >= 0) _posX else -1
-            set(/*TODO*/) =/*TODO*/
+        set(value) = if (value >= 0) field = value else field = 0
 
 
     val posY = _posY
-            get() = /*TODO*/
+        get() = if (field >= 0) field else -1
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other?.javaClass != javaClass) return false
+
+        other as Position
+
+        if (posY != other.posY) return false
+        if (posX != other.posX) return false
+
+        return true
+    }
 
 }
 
@@ -46,8 +58,7 @@ class Position(_posX: Int, _posY: Int) {
  * Read about @see <a href="http://kotlinlang.org/docs/reference/multi-declarations.html">Destructuring declaration</a> and make the following code compile by adding two things.
  */
 fun shouldReturnPairOfIdAndName(player: Player): Pair<Int, String> {
-    // uncomment :val (id,name) = /* TODO */
-    /* comment :*/val (id, name) = player
+    val (id, name) = player
     return Pair(id, name)
 }
 

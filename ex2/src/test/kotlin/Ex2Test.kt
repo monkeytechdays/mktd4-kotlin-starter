@@ -1,5 +1,6 @@
 import org.junit.Assert
 import org.junit.Test
+import util.Player
 
 /**
  * Exercise 2 : Fields, Properties, Lazy, Delegate
@@ -31,5 +32,9 @@ class Ex2Test {
         val position = Position(1, 2)
         position.posX = 3
         Assert.assertEquals("Position are not equals", position, Position(3, 2))
+    }
+
+    @Test fun testShouldReturnPairOfIdAndName(){
+        Assert.assertEquals(Pair(1, "Player 1"), shouldReturnPairOfIdAndName(Player(1, "Player 1")))
     }
 }
