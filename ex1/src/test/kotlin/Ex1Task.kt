@@ -27,15 +27,9 @@
  *    }
  * }
  */
-/*TODO */ class Player(val id: Int, val name: String)
 
 /**
  * Task 2:
- * Now add one element to that class to add equals and hashcode
- */
-
-/**
- * Task 3:
  * Consider that enum. Add a "static" function to find the Move by the letter.
  * And here is the function : fun from(value: String) = Move.values().firstOrNull { it.id == value } ?: NONE
  */
