@@ -18,6 +18,4 @@ class Ex7Test {
     @Test fun notContains() {
         Assert.assertFalse("The result should be false if the collection doesn't contain an even number", containsEven(listOf(43, 33)))
     }
-
-
 }

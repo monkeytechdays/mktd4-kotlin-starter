@@ -1,6 +1,5 @@
-package io.monkeypatch.mktd4.ex9
-
-import io.monkeypatch.mktd4.ex1.Move
+import util.Move
+import kotlin.coroutines.experimental.EmptyCoroutineContext.plus
 
 /**
  * Exercise 9: Pattern matching & Smart Cast
@@ -18,24 +17,24 @@ import io.monkeypatch.mktd4.ex1.Move
  * 5-6 ->NONE;
  * other -> null
  */
-fun findMoveUsingInt(value:Int): Move? = /* uncomment TODO()*/
-    /* comment */ when(value) {
-        0->Move.NORTH
-        in 1..2->Move.SOUTH
-        3->Move.WEST
-        4->Move.EAST
-        in 5..6-> Move.NONE
-        else ->  null
-    }
+fun findMoveUsingInt(value:Int): Move? =
+        when(value) {
+            0->Move.NORTH
+            in 1..2->Move.SOUTH
+            3->Move.WEST
+            4->Move.EAST
+            in 5..6-> Move.NONE
+            else ->  null
+        }
+
 
 /**
- * Using When expression return the relevant Integer
+ * Using When expression, return the relevant Integer
  */
-
 fun eval(expr: Expr): Int =
         when (expr) {
-            is Num -> TODO()
-            is Sum -> TODO()
+            is Num -> expr.value
+            is Sum -> eval(expr.left) + eval(expr.right)
             else -> throw IllegalArgumentException("Unknown expression")
         }
 

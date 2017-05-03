@@ -1,8 +1,6 @@
-package io.monkeypatch.mktd4.ex9
-
-import io.monkeypatch.mktd4.ex1.Move
 import org.junit.Assert
 import org.junit.Test
+import util.Move
 
 class Ex9Test {
 
@@ -28,5 +26,4 @@ class Ex9Test {
     @Test fun testRecursion() {
         Assert.assertEquals("'eval' should work:", 6, eval(Sum(Sum(Num(1), Num(2)), Num(3))))
     }
-
 }
