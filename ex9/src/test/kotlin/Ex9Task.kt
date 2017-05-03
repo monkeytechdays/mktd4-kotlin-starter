@@ -1,6 +1,4 @@
-package io.monkeypatch.mktd4.ex9
-
-import io.monkeypatch.mktd4.ex1.Move
+import util.Move
 
 /**
  * Exercise 9: Pattern matching & Smart Cast
@@ -18,15 +16,7 @@ import io.monkeypatch.mktd4.ex1.Move
  * 5-6 ->NONE;
  * other -> null
  */
-fun findMoveUsingInt(value:Int): Move? = /* uncomment TODO()*/
-    /* comment */ when(value) {
-        0->Move.NORTH
-        in 1..2->Move.SOUTH
-        3->Move.WEST
-        4->Move.EAST
-        in 5..6-> Move.NONE
-        else ->  null
-    }
+fun findMoveUsingInt(value:Int): Move? =TODO()
 
 /**
  * Using When expression return the relevant Integer
