@@ -15,7 +15,7 @@ fun getEmptyListOfPlayers(): List<Player> = TODO()
 /**
  * Filter players with score 0.
  */
-fun getPlayersWithScore0(players: List<Player>): List<Player> = TODO()
+fun getPlayersWithScoreNot0(players: List<Player>): List<Player> = TODO()
 
 /**
  * Return true if all players have a score not null

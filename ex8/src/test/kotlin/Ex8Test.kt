@@ -30,8 +30,8 @@ class Ex8Test {
 
     @Test
     fun testFilterPlayersWith0Score() {
-        Assert.assertEquals("Player list size should be 4", 4, getPlayersWithScore0(PLAYERS).size)
-        Assert.assertFalse("Player PLAYER_3 should not be part of the list", getPlayersWithScore0(PLAYERS).contains(PLAYER_3))
+        Assert.assertEquals("Player list size should be 4", 4, getPlayersWithScoreNot0(PLAYERS).size)
+        Assert.assertFalse("Player PLAYER_3 should not be part of the list", getPlayersWithScoreNot0(PLAYERS).contains(PLAYER_3))
     }
 
     @Test fun testCustomerWithScore() {
