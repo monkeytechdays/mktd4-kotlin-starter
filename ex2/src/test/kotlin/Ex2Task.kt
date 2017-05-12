@@ -46,8 +46,7 @@ class Position(_posX: Int, _posY: Int) {
  * Read about @see <a href="http://kotlinlang.org/docs/reference/multi-declarations.html">Destructuring declaration</a> and make the following code compile by adding two things.
  */
 fun shouldReturnPairOfIdAndName(player: Player): Pair<Int, String> {
-    // uncomment :val (id,name) = /* TODO */
-    /* comment :*/val (id, name) = player
+    val (id,name) = /* TODO */
     return Pair(id, name)
 }
 
