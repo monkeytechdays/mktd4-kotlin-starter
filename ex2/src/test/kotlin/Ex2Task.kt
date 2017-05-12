@@ -29,7 +29,7 @@ fun shouldInitializeImmutableProperty(): Int {
  *
  * Add a custom setter for posX to expose posX as an Integer >=0 if _posX >=0 or -1
  * Add a custom getter for posY to expose posY as an Integer >=0 if _posY >=0 or -1
- * Add a custom equals function. Two Positions are equals if (posY == other.posY) && (posX != other.posX)
+ * Add a custom equals function. Two Positions are equals if (posY == other.posY) && (posX == other.posX)
  */
 class Position(_posX: Int, _posY: Int) {
 
