@@ -34,11 +34,11 @@ class Ex8Test {
         Assert.assertFalse("Player PLAYER_3 should not be part of the list", getPlayersWithScore0(PLAYERS).contains(PLAYER_3))
     }
 
-    @Test fun testAllCustomersAreFromCity() {
+    @Test fun testCustomerWithScore() {
         Assert.assertTrue(checkAllPlayersHaveAScore(PLAYERS))
     }
 
-    @Test fun testAnyCustomerIsFromCity() {
+    @Test fun testPLayerWithScore10() {
         Assert.assertTrue(checkContainsPlayerWithScore10(PLAYERS))
     }
 
@@ -46,7 +46,7 @@ class Ex8Test {
         Assert.assertEquals(2, countPlayersWithScore20(PLAYERS))
     }
 
-    @Test fun testAnyCustomerFromCity() {
+    @Test fun testAnyPlayerWithScore() {
         Assert.assertEquals(PLAYER_2, findAnyPlayerWithScore(PLAYERS, 20))
         Assert.assertNull(findAnyPlayerWithScore(PLAYERS, 50))
     }
