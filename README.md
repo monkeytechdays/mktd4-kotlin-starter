@@ -15,3 +15,5 @@ Complete the exercises inside the master branch. If you're stuck, you can have a
 6. `i = i + 1`
 7. `if (i < 15) ➡️ 2`
 8. 🎉  
+
+> Tips: you can run your test in continuous mode with `gradle -t test`
