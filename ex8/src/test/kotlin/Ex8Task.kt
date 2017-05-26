@@ -5,7 +5,7 @@ import util.isValid
 /**
  * Exercise 8: Collections
  *
- * Read about <a href="http://kotlinlang.org/docs/reference/collections.html"></a>
+ * Read about <a href="http://kotlinlang.org/docs/reference/collections.html">Collections</a>
  */
 
 fun getEmptySetOfPlayers(): Set<Player> = TODO()
@@ -43,16 +43,20 @@ fun findAnyPlayerWithScore(players: List<Player>, score: Int): Player? = TODO()
 fun getPlayersNames(players: List<Player>): Array<String> = TODO()
 
 
-
+/**
+ * Return the players of every ganrs without using for or while
+ */
 fun getAllPlayers(games: List<Game>): List<Player> = TODO()
 
 /**
  * Return true if there is more valid position than invalid, false otherwise
  * using a maximum two lines line expression.
  *
- * Read about @see <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/partition.html"></a>
+ * Read about @see <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/partition.html">Partion</a>
  */
-fun isThereMoreValidThanInvalid(vararg positions: Position): Boolean = TODO()
+fun isThereMoreValidThanInvalid(vararg positions: Position): Boolean {
+    TODO()
+}
 
 
 
