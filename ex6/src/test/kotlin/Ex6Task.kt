@@ -3,7 +3,7 @@ package io.monkeypatch.mktd4.ex6
 /**
  * Exercise 6: Arguments, Default, Named
  *
- * Read about @see <a href="http://kotlinlang.org/docs/reference/functions.html#default-arguments"></a>
+ * Read about @see <a href="http://kotlinlang.org/docs/reference/functions.html#default-arguments">Default Arguments</a>
  */
 
 /**
@@ -15,14 +15,12 @@ package io.monkeypatch.mktd4.ex6
  *  ): String
  * It can be called on a collection of Strings. Specifying only two arguments make the function joinOptions() return the list in a JSON format (e.g., "[a, b, c]")
  */
-fun joinOptions(options: Collection<String>) = options.joinToString(
-        /*TODO*/
-)
+fun joinOptions(options: Collection<String>) = options.joinToString(/*TODO*/)
 
 /**
  * Complete the function to use var arguments.
  *
  * Read about @see <a href="https://kotlinlang.org/docs/reference/functions.html#variable-number-of-arguments-varargs">Variable number of arguments</a>
+ * joinVarArgsOptions("a", "b", "c", "d", "e") should build "[a, b, c, d, e]"
  */
-fun joinVarArgsOptions(
-        /*TODO*/
+fun joinVarArgsOptions(/*TODO */): String =  TODO()
