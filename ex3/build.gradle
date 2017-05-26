@@ -9,5 +9,10 @@ dependencies {
     testCompile project(":util")
     testCompile 'junit:junit:4.12'
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$parent.ext.kotlin_version"
+}
 
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
