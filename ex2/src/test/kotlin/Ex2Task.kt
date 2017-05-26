@@ -25,7 +25,7 @@ fun shouldInitializeImmutableProperty(): Int {
 }
 
 /**
- * Read about Getters and Setters @see <a href="https://kotlinlang.org/docs/reference/properties.html#getters-and-setters"></a>
+ * Read about Getters and Setters @see <a href="https://kotlinlang.org/docs/reference/properties.html#getters-and-setters">Getters and Setters</a>
  *
  * Add a custom setter for posX to update _posX as an Integer >=0 (use 0 is setter value < 0)
  * Add a custom getter for posY to expose posY as an Integer >=0 (use 0 is _poxY < 0)
