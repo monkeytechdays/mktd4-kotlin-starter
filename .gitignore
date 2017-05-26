@@ -21,6 +21,7 @@ gradle-app.setting
 
 # Idea
 .idea/
+*.iml
 *.iws
 # IntelliJ
 /out/
