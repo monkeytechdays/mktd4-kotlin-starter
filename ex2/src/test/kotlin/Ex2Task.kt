@@ -10,7 +10,7 @@ import util.Player
  * Initialize the mutable property with.
  */
 fun shouldInitializeMutableProperty(): Int {
-    TODO*/ a = 2
+    /*TODO*/ a = 2
     a = 3
     return a
 }
@@ -25,11 +25,12 @@ fun shouldInitializeImmutableProperty(): Int {
 }
 
 /**
- * Read about Getters and Setters @see <a href="https://kotlinlang.org/docs/reference/properties.html#getters-and-setters"></a>
+ * Read about Getters and Setters @see <a href="https://kotlinlang.org/docs/reference/properties.html#getters-and-setters">Getters and Setters</a>
  *
- * Add a custom setter for posX to expose posX as an Integer >=0 if _posX >=0 or -1
- * Add a custom getter for posY to expose posY as an Integer >=0 if _posY >=0 or -1
+ * Add a custom setter for posX to update _posX as an Integer >=0 (use 0 is setter value < 0)
+ * Add a custom getter for posY to expose posY as an Integer >=0 (use 0 is _poxY < 0)
  * Add a custom equals function. Two Positions are equals if (posY == other.posY) && (posX == other.posX)
+ * Note: you can also add a custom hashcode method using Java Objects.hash(...)
  */
 class Position(_posX: Int, _posY: Int) {
 

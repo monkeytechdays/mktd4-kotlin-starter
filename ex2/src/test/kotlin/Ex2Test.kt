@@ -16,16 +16,26 @@ class Ex2Test {
         Assert.assertEquals(2, shouldInitializeImmutableProperty())
     }
 
-    @Test fun testShouldAddCustomGetterAndSetters() {
+    @Test fun testShouldAddCustomSetter() {
         val position = Position(1, 2)
         position.posX = 3
-        // position.posY = 3 won't compile
         Assert.assertEquals(position.posX, 3)
+    }
 
-        position.posX = -1
+    @Test fun testShouldAddCustomSetterNegative() {
+        val position = Position(1, 2)
+        position.posX = -2
         Assert.assertEquals(position.posX, 0)
+    }
 
-        Assert.assertEquals(Position(0, -1).posY, -1)
+    @Test fun testShouldAddCustomGetter() {
+        val position = Position(1, 2)
+        Assert.assertEquals(position.posY, 2)
+    }
+
+    @Test fun testShouldAddCustomGetterNegative() {
+        val position = Position(1, -2)
+        Assert.assertEquals(position.posY, 0)
     }
 
     @Test fun testShouldCustomEquals() {
